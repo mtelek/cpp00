@@ -6,29 +6,30 @@
 /*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:05:59 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/29 20:28:12 by mtelek           ###   ########.fr       */
+/*   Updated: 2024/12/29 21:18:00 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
  
-bool isValidNumber(const std::string &str)
+bool is_valid_number(const std::string &str)
 {
-    size_t start = 0;
-    if (str[0] == '+')
+	size_t start = 0;
+	size_t i;
+	
+	if (str[0] == '+')
 	{
-        if (str.size() == 1)
-            return (false);
-        start = 1;
-    }
-    for (size_t i = start; i < str.size(); ++i)
+		if (str.size() == 1)
+			return (false);
+		start = 1;
+	}
+	for (i = start; i < str.size(); ++i)
 	{
-        if (!std::isdigit(str[i]))
-            return (false);
-    }
-    return (true);
+		if (!std::isdigit(str[i]))
+			return (false);
+	}
+	return (true);
 }
-
 
 std::string getting_input(std::string input)
 {
@@ -52,7 +53,7 @@ void execute_add(PhoneBook &phoneBook)
 	nName = getting_input(nName);
 	std::cout << "Enter phone number: ";
 	phNumber = getting_input(phNumber);
-	while (isValidNumber(phNumber) == false)
+	while (is_valid_number(phNumber) == false)
 	{
 		std::cout << "Invalid phone number, please try again: ";
 		phNumber = getting_input(phNumber);
@@ -72,7 +73,6 @@ void display_spec_contact(PhoneBook &phoneBook, int index)
               << std::setw(COLUMN_WIDTH) << std::right << formatText(contact.getLastName(), COLUMN_WIDTH) << "|"
               << std::setw(COLUMN_WIDTH) << std::right << formatText(contact.getNickname(), COLUMN_WIDTH) << "\n";
 }
-
 
 void execute_search(PhoneBook &phoneBook)
 {

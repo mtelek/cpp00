@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 12:45:53 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/29 20:20:45 by mtelek           ###   ########.fr       */
+/*   Updated: 2024/12/29 21:14:54 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,5 @@ class PhoneBook
 
 std::string	formatText(const std::string &text, int width);
 void		set_first_two_lines();
-
 
 #endif
