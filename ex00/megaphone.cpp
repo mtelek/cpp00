@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: mtelek <mtelek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 12:20:09 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/28 14:06:35 by mtelek           ###   ########.fr       */
+/*   Updated: 2025/01/12 15:20:29 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int main(int argc, char **argv)
 				std::cout << (char)std::toupper(*arg);
 				++arg;
 			}
-			std::cout << " ";
 		}
 	}
 	std::cout << "\n";

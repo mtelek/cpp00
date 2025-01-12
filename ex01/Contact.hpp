@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.hpp                                        :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: mtelek <mtelek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 12:58:47 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/29 20:31:43 by mtelek           ###   ########.fr       */
+/*   Updated: 2025/01/12 15:30:37 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class Contact
 		
 	public:
 		Contact();
+		~Contact();
 		void setDetails(const std::string &firstName, const std::string &lastName,
 			const std::string &nickname, const std::string &phoneNumber, const std::string  &darkestSsecret);
 		

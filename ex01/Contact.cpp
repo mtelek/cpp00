@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.cpp                                        :+:      :+:    :+:   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: mtelek <mtelek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 15:10:13 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/29 20:33:19 by mtelek           ###   ########.fr       */
+/*   Updated: 2025/01/12 15:34:56 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "contact.hpp"
+#include "Contact.hpp"
 
-Contact::Contact() : _firstName(""), _lastName(""), _phoneNumber("")
-{}
+Contact::Contact() : _firstName(""), _lastName(""), _phoneNumber("") {}
+
+Contact::~Contact() {}
 
 void Contact::setDetails(const std::string &firstName, const std::string &lastName,
 	const std::string &nickname, const std::string &phoneNumber, const std::string  &darkestSecret)

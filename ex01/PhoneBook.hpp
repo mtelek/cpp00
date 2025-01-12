@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtelek <mtelek@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: mtelek <mtelek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 12:45:53 by mtelek            #+#    #+#             */
-/*   Updated: 2024/12/29 21:14:54 by mtelek           ###   ########.fr       */
+/*   Updated: 2025/01/12 15:29:39 by mtelek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ class PhoneBook
 
 	public:
 		PhoneBook();
+		~PhoneBook();
 		
 		void addContact(const std::string &firstName, const std::string &lastName,
 			const std::string &nickname, const std::string &phoneNumber, const std::string &darkestSecret);
